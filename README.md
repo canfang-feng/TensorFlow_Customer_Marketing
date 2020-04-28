@@ -1,7 +1,8 @@
 ## Background
-[200~This is a course project code. It is required to apply deep learning method to an APP business case to predict if a customer will buy product again.
 
-The .csv summarizing the data. There are several variables: Customer ID, ), Book length overall (sum of the minute length of all purchases), Book length avg (average length in minutes of all purchases), Price paid_overall (sum of all purchases) ,Price Paid avg (average of all purchases), Review (a Boolean variable whether the customer left a review), Review out of 10 (if the customer left a review, his/her review out of 10, Total minutes listened, Completion (from 0 to 1), Support requests (number of support requests; everything from forgotten password to assistance for using the App), and Last visited minus purchase date (in days).
+This is a course project code. It is required to apply deep learning method to an APP business case to predict if a customer will buy product again.
+
+The .csv summarizing the data. There are several variables: Customer ID, ), Book length overall (sum of the minute length of all purchases), Book length avg (average length in minutes of all purchases), Price paid overall (sum of all purchases) ,Price Paid avg (average of all purchases), Review (a Boolean variable whether the customer left a review), Review out of 10 (if the customer left a review, his/her review out of 10, Total minutes listened, Completion (from 0 to 1), Support requests (number of support requests; everything from forgotten password to assistance for using the App), and Last visited minus purchase date (in days).
 
 These are the inputs (excluding customer ID, as it is completely arbitrary. It's more like a name, than a number).
 
@@ -11,15 +12,16 @@ The task is simple: create a machine learning algorithm, which is able to predic
 
 This is a classification problem with two classes: won't buy and will buy, represented by 0s and 1s.
 
-##the process for analysis:
-** Data preprocessing **
+## the process for analysis
+
+### Data preprocessing
 
 - 1 Preprocess the data, (sometimes it needs to shuffle the dataset)
 - 2 balance the dataset,
 - 3 create 3 datasets: training, validation, and test
 - 4 save the newly created sets in a tensor friendly format (e.g. *.npz)
 
-**Create the machine learning algorithm**
+### Create the machine learning algorithm
 
 - 5 import the dataset in friendly format
 - 6 create the model ( outline, optimizers, loss, early stopping and training)
